@@ -1,7 +1,7 @@
 public class SwitchStatement {
     public static void main(String[] args) {
 //        Switch is conditional statement where only can compare with ==
-        char nilai = 'D';
+        char nilai = 'A';
         String ucapan = "";
 
         switch (nilai) {
@@ -21,14 +21,19 @@ public class SwitchStatement {
             case 'A' -> System.out.println("Wow, Kerja Bagus");
             case 'B' -> System.out.println("Kerja Bagus");
             case 'C' -> System.out.println("Kerja Bagus");
-            default -> System.out.println("Blok");
+            default -> {
+                System.out.println("Blok");
+            }
         }
 
 //        In java also, instead of just reassign value to the variable, we can return a value with yield
         System.out.println(ucapan);
         ucapan = switch (nilai) {
             case 'A' :
-                yield "Wow, Kerja Bagus";
+                {
+                    System.out.println("Bjirs");
+                    yield "Wow, Kerja Bagus";
+                }
             case 'B' :
                 yield "Kerja Bagus";
             case 'C' :
