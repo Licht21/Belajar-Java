@@ -1,6 +1,7 @@
 public class PersonApp {
     public static void main(String[] args) {
         var person1 = new Person("Muhammad Yusuf Aulia","Sekata");
+        String name;
         Person person2 = new Person("Eko");
         Person person3 = new Person();
 
@@ -15,5 +16,6 @@ public class PersonApp {
         System.out.println(person3.name);
         System.out.println(person3.address);
         person3.sayHello();
+        System.out.println(person3);
     }
 }

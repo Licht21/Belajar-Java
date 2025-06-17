@@ -1,9 +1,9 @@
 package abstrct;
 
-public abstract class abstractExample {
+abstract class abstractExample {
     abstractExample(){}
 
-    public abstract void run();
+    protected abstract void run();
 }
 
 class ex1 extends abstractExample {

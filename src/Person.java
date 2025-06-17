@@ -12,9 +12,7 @@ class Person {
         this(name, null);
     }
 
-    Person() {
-        this(null);
-    }
+    Person() {}
 
     void sayHello() {
         this.sayHello("Bos");
