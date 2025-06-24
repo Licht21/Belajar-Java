@@ -26,7 +26,7 @@ class VicePresident extends Manager {
     }
 }
 
-class CleaningService extends Manager {
+final class CleaningService extends Manager {
 
     CleaningService(String name) {
         super(name);
